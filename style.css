@@ -4,11 +4,13 @@ body {
     padding: 0px;
     outline: none;
     border: 0px;
-    font-family: "DM Serif Text", serif;
+    font-family: "Space Mono", normal;
+    background-color: #d4d9dd;
 }
 
 ul {
     text-align: left;
+    padding-left: 30px;
 }
 
 a {
@@ -51,19 +53,27 @@ h3 {
     background-color: #616161;
 }
 
-#about,
-#accomplishments {
-    background-color: #424246;
+#about {
+    background-color: #d4d9dd;
     text-align: left;
     margin: -30px;
-    padding: 100px;
-    color: #d4d9dd;
+    padding: 60px;
+    color: black;
 }
 
-#services,
+#about {
+    overflow: auto;
+}
+
+
+#about-content {
+    float: right;
+    width: 100%;
+}
+
 #contact {
     background-color: #d4d9dd;
-    text-align: right;
+    text-align: left;
     margin: -30px;
     padding: 100px;
     color: #424246;
@@ -75,13 +85,7 @@ h3 {
 padding-bottom: 2em;
 }
 
-#footer img {
-    width: 75px;
-    height: 75px;
-    padding: 20px;
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     #topNav a {
         padding-top: .5em;
         padding-bottom: .5em;
@@ -99,4 +103,15 @@ padding-bottom: 2em;
     #accomplishments {
         padding: 40px;
     }
+    #about img, .about-column, #about-content {
+        float: none;
+        width: 100%;
+    }
+}
+
+.social-icon {
+    width: 40px;  
+    height: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
